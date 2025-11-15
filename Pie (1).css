@@ -1,7 +1,7 @@
 /* Footer general */
 .footer {
-  background-color: #222; /* Fondo oscuro para contraste */
-  color: white;
+  background-color: #d2efe0; /* Fondo oscuro para contraste */
+  color: rgb(0, 0, 0);
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
 }
@@ -37,13 +37,13 @@
 
 .footer-links a {
   display: block;
-  color: #ccc;
+  color: #000000;
   text-decoration: none;
   margin: 0.3rem 0;
 }
 
 .footer-links a:hover {
-  color: #fff;
+  color: #000000;
 }
 
 /* Redes sociales con íconos */

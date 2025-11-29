@@ -1,2 +1,0 @@
-# ClaseIHC
-Created with CodeSandbox

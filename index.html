@@ -1,246 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Web Site</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="Pie (1).css" />
-  </head>
-  <body>
-    <!--LOGO-Y-MENUS-->
-    <nav class="topheader">
-      <a href="" class="logo">
-        <img height="40" width="120" src="imagenes/logo.png" alt="" />
-      </a>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
 
-      <ul class="Menu-Horinzontal">
-        <li><a href="#creditos">Creditos</a></li>
-        <li>
-          <a href="">Cuentas</a>
-          <ul class="Menu-Vertical">
-            <li><a href="">Cuenta Sueldo</a></li>
-            <li><a href="">Club Emprendedor</a></li>
-            <li><a href="">Yape y Plin</a></li>
-            <li><a href="">Depositos</a></li>
-          </ul>
-        </li>
-        <li><a href="#seguros">Seguros</a></li>
-        <li><a href="#contactanos">Contactanos</a></li>
-      </ul>
-    </nav>
-    <!--SECCION CREDITOS-->
-    <section class="seccion-creditos">
-      <div class="cont-gral-creditos">
-        <div class="con-cred-texto">
-          <h2>Seccion de Creditos</h2>
-          <p>
-            El crédito es un préstamo de dinero que una parte otorga a otra, con
-            el compromiso de que, en el futuro, quien lo recibe devolverá dicho
-            préstamo en forma gradual (mediante el pago de cuotas) o en un solo
-            pago y con un interés adicional que compensa a quien presta, por
-            todo el tiempo que no tuvo ese dinero.
-          </p>
-          <p>
-            Ahora bien, no cualquier persona puede tener acceso a un crédito
-            bancario. Para ello debe cumplir con ciertos requisitos, siendo los
-            principales contar con antecedentes comerciales y crediticios
-            adecuados y demostrar ingresos actuales y futuros que le permitan
-            atender de manera adecuada la deuda que va a contraer.
-          </p>
-        </div>
-        <div class="cont-cred-img"></div>
-        <img src="imagenes/5-cs-do-credito-icon.jpg" />
-      </div>
-    </section>
-    <!--SECCION SEGUROS-->
-    <section class="seccion-seguros" id="seguros">
-      <div class="cont-gral-seguros">
-        <div class="cont-seg-texto">
-          <h2>Seccion Seguros</h2>
-          <p>
-            Los términos y condiciones del Contrato de Seguros pueden ser objeto
-            de negociación entre el contratante y la compañía de seguros, dentro
-            del marco legal dispuesto por las normas vigentes que regulan el
-            Contrato de Seguro y el Sistema de Seguros, el que contempla una
-            protección especial en el caso de los seguros personales,
-            obligatorios y masivos, respecto a los cuales dispone la aprobación
-            administrativa previa de sus condiciones mínimas por parte de la
-            Superintendencia de Banca, Seguros y AFP (en adelante, la
-            Superintendencia).
-          </p>
-          <p>
-            Las cláusulas no contempladas como condiciones mínimas por la ley no
-            son materia de aprobación por esta Superintendencia; siendo que
-            algunas de ellas, como la que regula el tratamiento de datos
-            personales, se encuentran bajo el ámbito de competencia de otras
-            entidades, en cuyo caso pueden o no incorporarse en los modelos de
-            pólizas que se muestran en precitado Registro.
-          </p>
-          <buttom>Leer más...</buttom>
-        </div>
-        <div class="cont-seg-video"></div>
-        <iframe
-          width="5000"
-          height="300"
-          src="https://www.youtube.com/embed/W-MwmfLFlM0?si=L2Qp3SdX-F6n6B7w"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
-    <!--SECCION FORMULARIO-->
-    <section class="seccion-formulario" id="contactanos">
-      <div class="cont-gral-formulario">
-        <h2>Formulario de Registro</h2>
-        <p>Complete todos los datos y sus preferencias</p>
-        <form class="formulario">
-          <div class="campo">
-            <label form="nombre">Nombres Completos:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingrese su nombre"
-            />
-          </div>
-          <!--lista despegable-->
-          <div class="campo">
-            <label for="pais">Pais:</label>
-            <select id="pais" name="pais">
-              <option value="">Seleccione un pais</option>
-              <option value="Peru">Peru</option>
-              <option value="Peru">Argentina</option>
-              <option value="Peru">Brasil</option>
-              <option value="Peru">Mexico</option>
-            </select>
-          </div>
-          <!--checkbox-->
-          <div class="campo">
-            <label>Intereses:</label>
-            <ul class="lista-checkbox">
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="tecnologia"
-                  />Tecnologia</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="educacion"
-                  />Educacion</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="checkbox"
-                    name="intereses"
-                    value="idiomas"
-                  />Idiomas</label
-                >
-              </li>
-            </ul>
-          </div>
-          <!--radio button-->
-          <div class="campo">
-            <label>Genero:</label>
-            <ul class="lista-radio">
-              <li>
-                <label
-                  ><input
-                    type="radio"
-                    name="genero"
-                    value="masculino"
-                  />Masculino</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input
-                    type="radio"
-                    name="genero"
-                    value="femenino"
-                  />Femenino</label
-                >
-              </li>
-            </ul>
-          </div>
-          <!--radio button-->
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-    <!-- PIE DE PAGINA -->
+    <section class="login-container">
+        
+        <div class="login-box">
+            <h2>Acceso Restringido</h2>
+            
+            <form onsubmit="return validarLogin(event);">
+                
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Clave de Acceso (ok)</label>
+                    <input type="password" id="password" name="password" placeholder="Introduce la clave secreta" required>
+                </div>
+                
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+            </form>
 
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
-          <div class="footer-brand">
-            <img
-              height="40"
-              width="120"
-              src="imagenes/logo.png"
-              alt="Logo"
-              class="footer-logo"
-            />
-            <p>SENATI</p>
-            <small>© 2025 Todos los derechos reservados</small>
-          </div>
-
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <a href="/Documentos/3.politica-privacidad.pdf"
-              >Política de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="#">Términos y Condiciones</a>
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="/imagenes/obtenerDocumento.pdf">Protección de Datos</a>
-          </div>
-
-          <!-- Redes sociales con íconos personalizados -->
-          <div class="footer-social">
-            <h4>Síguenos</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
-        </div>
-      </footer>
+        </div> 
     </section>
-  </body>
+
+    <script src="login.js"></script>
+    
+</body>
 </html>

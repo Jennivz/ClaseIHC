@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>QuickCrave</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="topheader">
+      <button
+        class="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        type="button"
+      >
+        &#9776;
+      </button>
+
+      <a href="#inicio" class="logo" aria-label="Inicio">
+        <img src="imagenes/logo.png" alt="QuickCrave" width="160" height="40" />
+      </a>
+
+      <ul id="menu-principal" class="Menu-Horizontal">
+        <li><a href="#inicio">Inicio</a></li>
+
+        <li class="tiene-submenu">
+          <a href="#menu">Menú</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#menu">Hamburguesas</a></li>
+            <li><a href="#menu">Pizzas</a></li>
+            <li><a href="#menu">Pollo</a></li>
+            <li><a href="#menu">Bebidas</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#promos">Promos</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section id="inicio" class="hero">
+        <div class="container">
+          <h1>Tu antojo, en minutos</h1>
+          <p>Pide hamburguesas, pizzas y combos con delivery rápido.</p>
+          <a class="btn" href="#menu">Ver menú</a>
+        </div>
+      </section>
+
+      <!-- MENÚ -->
+      <section id="menu" class="section">
+        <div class="container">
+          <h2>Menú</h2>
+
+          <div class="grid">
+            <article class="card">
+              <img class="card-media" src="imagenes/Imagen1.webp" alt="Smash Doble Cheese" />
+              <h3>Smash Doble Cheese</h3>
+              <p>Pan brioche, doble carne, cheddar.</p>
+              <div class="card-foot">
+                <span class="price">S/ 18.90</span>
+                <button class="btn btn-sm" type="button">Agregar</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card-media" src="imagenes/Imagen2.webp" alt="Pizza Pepperoni 12 pulgadas" />
+              <h3>Pizza Pepperoni 12"</h3>
+              <p>Masa fina, doble pepperoni.</p>
+              <div class="card-foot">
+                <span class="price">S/ 32.00</span>
+                <button class="btn btn-sm" type="button">Agregar</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card-media" src="imagenes/Imagen3.webp" alt="Combo Crispy" />
+              <h3>Combo Crispy</h3>
+              <p>2 presas + papas + bebida.</p>
+              <div class="card-foot">
+                <span class="price">S/ 24.50</span>
+                <button class="btn btn-sm" type="button">Agregar</button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="card-media" src="imagenes/Imagen4.webp" alt="Lemonade XL" />
+              <h3>Lemonade XL</h3>
+              <p>Limonada con hierbabuena.</p>
+              <div class="card-foot">
+                <span class="price">S/ 8.90</span>
+                <button class="btn btn-sm" type="button">Agregar</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEXTO + IMAGEN -->
+      <section id="info" class="section">
+        <div class="container">
+          <div class="fila">
+            <div class="col texto">
+              <h2>Sabores que llegan rápido</h2>
+              <p>
+                Preparamos tus pedidos al instante y los enviamos calientes.
+                Elige combos o arma tu pedido a tu gusto.
+              </p>
+              <ul class="lista">
+                <li>Pan brioche y carnes smash</li>
+                <li>Pizzas de 12"</li>
+                <li>Pollo crujiente</li>
+                <li>Bebidas y limonadas</li>
+              </ul>
+            </div>
+
+            <div class="col media">
+              <img src="imagenes/burgers.jpeg" alt="Hamburguesas y papas" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEXTO + VIDEO -->
+      <section id="delivery" class="section">
+        <div class="container">
+          <div class="fila">
+            <div class="col texto">
+              <h2>¿Cómo funciona el delivery?</h2>
+              <ol class="lista">
+                <li>Haz tu pedido desde el menú.</li>
+                <li>Paga online o contraentrega.</li>
+                <li>Seguimos tu pedido hasta tu puerta.</li>
+              </ol>
+            </div>
+
+            <div class="col media">
+              <div class="video">
+                <iframe
+                  src="https://www.youtube.com/embed/24dqiLEq8ww?si=ij17f0zWFx4CCAPa"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promos -->
+      <section id="promos" class="section section-muted">
+        <div class="container">
+          <h2>Promos de la semana</h2>
+
+          <div class="promo-box" role="region" aria-label="Promoción destacada">
+            <p class="promo-text"><strong>-25%</strong> Combo Doble Smash + Papas + 2 Bebidas</p>
+            <a class="btn btn-sm promo-cta" href="#menu">Aprovechar</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="section section-muted">
+        <div class="container">
+          <h2>Contáctanos</h2>
+
+          <div class="contact-card">
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-grid">
+                <div class="field">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+                </div>
+
+                <div class="field field-full">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos en qué te ayudamos" required></textarea>
+                </div>
+
+                <div class="field field-full">
+                  <button class="btn btn-sm" type="submit">Enviar mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <!-- PIE DE PAGINA -->
+<section id="footer">
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo y nombre de sitio -->
+      <div class="footer-brand">
+        <img
+          height="40"
+          width="120"
+          src="imagenes/logo.png"
+          alt="Logo"
+          class="footer-logo"
+        />
+        <small>© 2025 Todos los derechos reservados</small>
+      </div>
+
+      
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="/Documentos/no hay xd.pdf">Política de Privacidad</a>
+        <a href="/Documentos/no hay xd.pdf">Términos y Condiciones</a>
+        <a href="/imagenes/obtenerDocumento.pdf">Protección de Datos</a>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="social-icon" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram" class="social-icon" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145806.png" alt="Twitter" class="social-icon" /></a>
+      </div>
+    </div>
+  </footer>
+</section>
+
+    </main>
+    <!-- No quiero crear mas js me mareo xd -->
+    <script>
+      const btn = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".Menu-Horizontal");
+
+      function closeMenu() {
+        menu.classList.remove("active");
+        btn.setAttribute("aria-expanded", "false");
+      }
+
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          const isOpen = menu.classList.toggle("active");
+          btn.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 600) closeMenu();
+        });
+      }
+    </script>
+  </body>
+</html>
